@@ -1,5 +1,6 @@
 {
   "name": "medally",
+  "homepage": "https://CamiloHuertas.github.io/medally",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
