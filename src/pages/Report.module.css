@@ -1,0 +1,27 @@
+.reportHeader {
+  background: linear-gradient(130deg, #1d4e7a, #2E6DA4);
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 16px;
+  color: white;
+}
+.reportTitle { font-size: 20px; font-weight: 900; }
+.reportDate { font-size: 13px; color: #b8d8f0; margin-top: 4px; }
+.reportUser { font-size: 13px; color: #b8d8f0; margin-top: 2px; }
+
+.actions { display: flex; gap: 12px; margin-top: 4px; }
+.copyBtn, .printBtn {
+  flex: 1; border: none; border-radius: 12px;
+  padding: 14px; font-size: 15px; font-weight: 800;
+  font-family: 'Nunito', sans-serif; cursor: pointer; transition: all 0.2s;
+}
+.copyBtn { background: var(--blue); color: white; }
+.copyBtn:hover { background: var(--blue-dark); }
+.printBtn { background: white; color: var(--blue); border: 1.5px solid var(--blue); }
+.printBtn:hover { background: var(--blue-light); }
+
+.hint { text-align: center; color: var(--muted); font-size: 12px; margin-top: 10px; }
+
+@media print {
+  .actions, .hint { display: none; }
+}

@@ -1,0 +1,95 @@
+.page {
+  display: flex;
+  min-height: 100vh;
+}
+
+.left {
+  flex: 1;
+  background: linear-gradient(150deg, #1d4e7a 0%, #2E6DA4 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px;
+  color: white;
+}
+
+.brand { margin-bottom: 48px; }
+.brandIcon { font-size: 52px; }
+.brandName { font-size: 42px; font-weight: 900; margin-top: 8px; }
+.brandTagline { font-size: 18px; color: #b8d8f0; margin-top: 6px; }
+
+.features { list-style: none; display: flex; flex-direction: column; gap: 16px; }
+.features li { font-size: 17px; color: #cce3f5; font-weight: 600; }
+
+.right {
+  width: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background: var(--bg);
+}
+
+.card {
+  background: var(--white);
+  border-radius: 20px;
+  padding: 40px;
+  width: 100%;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.10);
+}
+
+.cardTitle { font-size: 26px; font-weight: 900; color: var(--text); }
+.cardSub { font-size: 14px; color: var(--muted); margin-top: 4px; margin-bottom: 28px; }
+
+.form { display: flex; flex-direction: column; gap: 18px; }
+
+.field { display: flex; flex-direction: column; gap: 6px; }
+.field label { font-size: 13px; font-weight: 700; color: var(--muted); }
+.field input {
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+  padding: 12px 14px;
+  font-size: 15px;
+  background: #f8fafc;
+  color: var(--text);
+  outline: none;
+  transition: border-color 0.2s;
+}
+.field input:focus { border-color: var(--blue); }
+
+.error {
+  background: #fff0f0;
+  border: 1px solid #ffc0c0;
+  color: var(--red);
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.btn {
+  background: var(--blue);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 14px;
+  font-size: 15px;
+  font-weight: 800;
+  transition: background 0.2s;
+  margin-top: 4px;
+}
+.btn:hover:not(:disabled) { background: var(--blue-dark); }
+.btn:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.toggle { text-align: center; margin-top: 20px; font-size: 14px; color: var(--muted); }
+.toggle span { color: var(--blue); font-weight: 700; cursor: pointer; }
+.toggle span:hover { text-decoration: underline; }
+
+@media (max-width: 768px) {
+  .page { flex-direction: column; }
+  .left { padding: 40px 24px 32px; }
+  .brandName { font-size: 32px; }
+  .features { display: none; }
+  .right { width: 100%; padding: 24px; }
+  .card { padding: 28px 22px; }
+}

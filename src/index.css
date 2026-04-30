@@ -1,0 +1,32 @@
+/* src/index.css */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --blue: #2E6DA4;
+  --blue-dark: #1d4e7a;
+  --blue-light: #e8f2fb;
+  --green: #4caf50;
+  --orange: #ff9800;
+  --red: #ef5350;
+  --bg: #f2f6fa;
+  --white: #ffffff;
+  --text: #1a1a2e;
+  --muted: #7a8499;
+  --border: #e0e8f0;
+  --shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+button { cursor: pointer; font-family: 'Nunito', sans-serif; }
+input, select { font-family: 'Nunito', sans-serif; }
+a { text-decoration: none; }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
