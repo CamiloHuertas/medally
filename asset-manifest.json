@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/medally/static/css/main.5d00dd59.css",
+    "main.js": "/medally/static/js/main.09091cc6.js",
+    "index.html": "/medally/index.html",
+    "main.5d00dd59.css.map": "/medally/static/css/main.5d00dd59.css.map",
+    "main.09091cc6.js.map": "/medally/static/js/main.09091cc6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5d00dd59.css",
+    "static/js/main.09091cc6.js"
+  ]
+}
